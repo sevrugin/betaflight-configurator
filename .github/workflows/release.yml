@@ -22,15 +22,15 @@ on:
         type: boolean
 
 jobs:
-#  ci:
-#    name: CI
-#    uses: ./.github/workflows/ci.yml
-#    with:
-#      debug_build: false
+ ci:
+   name: CI
+   uses: ./.github/workflows/ci.yml
+   with:
+     debug_build: false
 
   release:
     name: Release
-#    needs: ci
+    needs: ci
     runs-on: ubuntu-latest
     steps:
       - name: Fetch build artifacts
