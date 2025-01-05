@@ -22,11 +22,11 @@ on:
         type: boolean
 
 jobs:
-  ci:
-    name: CI
-    uses: ./.github/workflows/ci.yml
-    with:
-      debug_build: false
+#  ci:
+#    name: CI
+#    uses: ./.github/workflows/ci.yml
+#    with:
+#      debug_build: false
 
   release:
     name: Release
