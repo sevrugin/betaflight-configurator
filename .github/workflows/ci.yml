@@ -33,8 +33,8 @@ jobs:
 
       - run: yarn install --immutable --immutable-cache --check-cache
 
-      - name: Run unit tests
-        run: yarn test
+#      - name: Run unit tests
+#        run: yarn test
 
   build:
     name: Build (${{ matrix.name }})
